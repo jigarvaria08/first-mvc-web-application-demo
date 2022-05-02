@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<p>Use this area to provide additional information.</p>
+<p>viewdata:@ViewData["Message1"]</p>
+<p>viewbag:@ViewBag.Message2 </p>
+<h5>tempdata=@TempData["Message3"]</h5>       
+<ul>@*
+    @{
+        foreach (string i in (string[])TempData["river"])
+        {
+            <li>tempdata :@i</li>      
+        }
+    }*@
+</ul>  
